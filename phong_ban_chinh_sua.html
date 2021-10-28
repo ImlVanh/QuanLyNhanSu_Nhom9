@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chỉnh sửa phòng ban</title>
+        <link rel="stylesheet" href="./accests/css/style.css">
+        <link rel="stylesheet" href="./accests/css/base.css">
+    <!--
+        <link rel="stylesheet" href="./accests/css/bootstrap-grid-extend.css">
+        <link rel="stylesheet" href="./accests/css/bootstrap.min.v4.css">
+        <link rel="stylesheet" href="./accests/css/bootstrap.min.v5.css">
+        <link rel="stylesheet" href="./accests/css/bootstrap.v5.css">
+    -->
+        <link rel="stylesheet" href="./accests/fonts/themify-icons-font (1)/themify-icons/themify-icons.css">
+    </head>
+    <body>
+    <!-- header -->
+        <div id="header">
+                <ul id="nav">
+                    <li><a href="">
+                        <i class="ti-menu"></i>
+                        Tiện ích
+                        </a>
+                        <ul class="subnav">
+                            <li><a href="http://127.0.0.1:5500/home.html"> 
+                                <i class="tools-icon ti-home"></i>
+                                Trang chủ
+                            </a></li>
+                            <li><a href="">
+                                <i class="tools-icon ti-eye"></i>
+                                Theo dõi
+                            </a></li>
+                            <li><a href="http://127.0.0.1:5500/ho_so.html">
+                                <i class="tools-icon ti-id-badge"></i>
+                                Hồ sơ                             
+                            </a></li>
+                            <li><a href="">
+                                <i class="tools-icon ti-calendar"></i>
+                                Bảng chấm công
+                            </a></li>
+                            <li><a href="">
+                                <i class="tools-icon ti-blackboard"></i>
+                                Phòng ban
+                            </a></li>
+                            <li><a href="">
+                                <i class="tools-icon ti-credit-card"></i>
+                                Lương 
+                            </a></li>
+                            <li><a href="">
+                                <i class="tools-icon ti-settings"></i>
+                                Cài đặt
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                            <input type="text" class="search-bar" placeholder="Tìm kiếm nhân viên">                       
+                    </li>
+                </ul>
+                <a href="http://127.0.0.1:5500/register.html" class="get-in">
+                    Tham Gia
+                </a>
+                <div class="user-btn">
+                    <i class="user-icon ti-user"></i>
+                </div>
+                <div class="noti-btn">
+                    <i class="noti-icon ti-bell"></i>
+                </div>
+        </div>
+
+    <!--slide-->
+
+    <!-- active box -->
+   
+        <div class="content">
+            <div class="active-box">
+                <div class="active-box_title">
+                    <h3>Kết nối</h3>
+                </div>
+                <div class="active-status-list">
+                    <div class="online">
+                        <img src="./accests/img/member/GS.jpg">
+                    </div>
+                    <p>Đặng Đình Phương</p>
+                </div>
+                <div class="active-status-list">
+                    <div class="online">
+                        <img src="./accests/img/member/Cauam.jpg">
+                    </div>
+                    <p>Phạm Quốc Việt</p>
+                </div>
+                <div class="active-status-list">
+                    <div class="online">
+                        <img src="./accests/img/member/Lam.jpg">
+                    </div>
+                    <p>Nguyễn Văn Nam</p>
+                </div>
+                <div class="active-status-list">
+                    <div class="online">
+                        <img src="./accests/img/member/huyodin.jpg">
+                    </div>
+                    <p>Trần Quang Huy</p>
+                </div>
+                <div class="active-status-list">
+                    <div class="offline">
+                        <img src="./accests/img/member/V.jpg">
+                    </div>
+                    <p>Lưu Việt Anh</p>
+                </div>
+            </div>
+            <div class="information">
+                <div class="member">
+                    <div class="member-bar__header">
+                        <h4 class='member-bar__heading'>Danh sách nhân viên</h4>
+                        <label for="departments__choosing">Chọn phòng ban:</label>
+                        <select id="departments__choosing">
+                            <option href="" label="Nội dung">Nội dung</option>
+                            <option href="" label="Chỉnh sửa nội dung">Chỉnh sửa nội dung</option>
+                            <option href="" label="Tìm kiếm thông tin">Tìm kiếm thông tin</option>
+                            <option href="" label="html">html</option>
+                          </select>
+                          
+                        <a href="http://127.0.0.1:5500/phong_ban.html" class="member__queries">
+                            <i class="ti-check"></i>
+                            Hoàn tất sửa đổi
+                        </a>
+                    </div>
+                    <table class="member-table">
+                        <tr class='member__attribute'>
+                            <th class='member__pictures'></th>
+                            <th class="member__name">Tên nhân viên</th>
+                            <th class="member__group">Phòng ban</th>
+                            <th class="member__delete"></th>
+                        </tr>
+                        <tr class="member__attribute-draft">
+                            <td class='member__pictures'>
+                                <img src="./accests/img/member/Cauam.jpg">
+                            </td>
+                            <td class="member__name">Phạm Quốc Việt</td>
+                            <td class="member__group">
+                                <input type="text" class="changing__member-group" placeholder="Nhập phòng ban mới">
+                            </td>
+                            <td class="member__delete">
+                                <i class="ti-trash"></i>
+                            </td>
+                        </tr>
+                        <tr class="member__attribute-draft">
+                            <td class='member__pictures'>
+                                <img src="./accests/img/member/V.jpg">
+                            </td>
+                            <td class="member__name">Nguyễn Văn A</td>
+                            <td class="member__group">
+                                <input type="text" class="changing__member-group" placeholder="Nhập phòng ban mới">
+                            </td>
+                            <td class="member__delete">
+                                <i class="ti-trash"></i>
+                            </td>
+                        </tr>
+                        <tr class="member__attribute-draft">
+                            <td class='member__pictures'>
+                                <img src="./accests/img/member/random_ppl_3.jfif">
+                            </td>
+                            <td class="member__name">Lê Thị C</td>
+                            <td class="member__group">
+                                <input type="text" class="changing__member-group" placeholder="Nhập phòng ban mới">
+                            </td>
+                            <td class="member__delete">
+                                <i class="ti-trash"></i>
+                            </td>
+                        </tr>
+                        <tr class="member__attribute-draft">
+                            <td class='member__pictures'>
+                                <img src="./accests/img/member/random_ppl_2.jfif">
+                            </td>
+                            <td class="member__name">Hoàng Quốc T</td>
+                            <td class="member__group">
+                                <input type="text" class="changing__member-group" placeholder="Nhập phòng ban mới">
+                            </td>
+                            <td class="member__delete">
+                                <i class="ti-trash"></i>
+                            </td>
+                        </tr>
+                        <tr class="member__attribute-draft">
+                            <td class='member__pictures'>
+                                <img src="./accests/img/member/ramdom_ppl_1.jfif">
+                            </td>
+                            <td class="member__name">Phạm Văn X</td>
+                            <td class="member__group">
+                                <input type="text" class="changing__member-group" placeholder="Nhập phòng ban mới">
+                            </td>
+                            <td class="member__delete">
+                                <i class="ti-trash"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="add__member">
+                        <i class="ti-plus"></i>
+                        Thêm nhân viên
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+    
+    </body>
+</html>
